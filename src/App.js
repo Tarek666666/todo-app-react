@@ -17,7 +17,7 @@ function App() {
 
     useEffect(()=>{
         localStorage.setItem('tasks' , JSON.stringify(tasks))
-    } , [tasks])
+    } , [tasks , newTask , newTo])
 
     // handle add task from
     const handleAddTask = (e) => {
