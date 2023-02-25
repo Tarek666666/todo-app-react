@@ -2,10 +2,11 @@ import "./App.css";
 import TodoFrom from "../src/components/todoFrom";
 import TodoList from "../src/components/todoList";
 import Alert from "../src/components/alert";
-import { useState  } from "react";
+import { useState , useEffect } from "react";
 
 function App() {
-    const [tasks, setTasks] = useState([]);
+    const initialTasks = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')):[];
+    const [tasks, setTasks] = useState(initialTasks);
     const [newTask, setNewTask] = useState("");
     const [newTo, setNewTo] = useState("");
     const [alert, setAlert] = useState(false);
@@ -13,6 +14,10 @@ function App() {
     const [alertMsg, setAlertMsg] = useState("");
     const [edit, setEdit] = useState(false);
     const [id, setId] = useState(0);
+
+    useEffect(()=>{
+        localStorage.setItem('tasks' , JSON.stringify(tasks))
+    } , [tasks])
 
     // handle add task from
     const handleAddTask = (e) => {
