@@ -2,6 +2,10 @@
 
 Apptodo is a simple single-page application (SPA) built with React. It allows users to create, delete, and update todo items, which are stored in local storage for persistent access. This app was created as a training project to gain experience with React development before embarking on a larger-scale project.
 
+
+# Demo :
+
+Online Deployment of this project is available at:    [TodoApp](https://tarek666666.github.io/todo-app-react/) <br>
 # Technologies Used
 
 The following technologies were used to develop this app:
