@@ -6,14 +6,7 @@ Apptodo is a simple single-page application (SPA) built with React. It allows us
 # Demo :
 
 Online Deployment of this project is available at:    [TodoApp](https://tarek666666.github.io/todo-app-react/) <br>
-# Technologies Used
 
-The following technologies were used to develop this app:
-
-React: A JavaScript library for building user interfaces.
-React DOM: The package that provides the necessary bindings to render React components in the browser.
-React Router DOM: A library that enables client-side routing, allowing users to navigate between different pages of the app without a full page reload.
-Bootstrap: A popular CSS framework that provides a responsive design system for building attractive and consistent UI elements.
 
 # Installation
 
